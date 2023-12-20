@@ -1,0 +1,38 @@
+<!-- Agrega las referencias de Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container mt-4">
+  <h3 class="text-center mb-4">Lista de Cursos</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Duración (horas)</th>
+          <th scope="col">Profesor</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Itera sobre tus datos de cursos y muestra cada curso en la tabla -->
+        <tr *ngFor="let curso of listadoCurso">
+          <td>{{ curso.nombre }}</td>
+          <td>{{ curso.descripcion }}</td>
+          <td>{{ curso.estado }}</td>
+          <td>{{ curso.duracion }}</td>
+          <td>{{ curso.profesor?.nombre }} {{curso.profesor?.apellido }}</td>
+          <td>
+            <button class="btn btn-danger btn-sm">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+<!-- Agrega las referencias de Bootstrap JavaScript (jQuery y Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+

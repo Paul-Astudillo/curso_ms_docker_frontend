@@ -1,0 +1,37 @@
+
+.curso-form {
+    max-width: 400px;
+    margin: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para los campos de entrada y selects */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para el botón de registrar */
+  .custom-btn {
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .custom-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  .custom-select-lg {
+    font-size: 15px; /* Ajusta el tamaño de fuente según tus preferencias */
+    height: 43px; /* Ajusta la altura según tus preferencias */
+  }
+  

@@ -1,0 +1,22 @@
+/* Estilos para el encabezado */
+header {
+  position: relative;
+  text-align: center;
+  margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+  margin-bottom: 40px; /* Ajusta el margen inferior según tus preferencias */
+}
+
+.titulo {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la imagen */
+.imagen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 150px; /* Ajusta el tamaño máximo según tus preferencias */
+  width: auto;
+  height: auto;
+}

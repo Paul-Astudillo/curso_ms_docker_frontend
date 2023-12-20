@@ -1,0 +1,33 @@
+/* Estilos generales */
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+}
+
+/* Estilos para la tabla */
+.table {
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+.table thead th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Estilos para el encabezado */
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
