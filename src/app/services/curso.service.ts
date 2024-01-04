@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Curso } from '../model/curso';
 
-const urlbase = "http://localhost:8090/ms/curso/"
+const urlbase = "localhost:8082/microservicios-rs/api/cursos/"
 @Injectable({
   providedIn: 'root'
 })
@@ -18,7 +18,7 @@ export class CursoService {
     console.log("curso: "+curso.id)
 
     const headers = new HttpHeaders({'Content-Type': 'application/json'})
-    return this.http.post<any>(urlbase+"guardar", JSON.stringify(curso), {headers})
+    return this.http.post<any>(urlbase+"nuevocurso", JSON.stringify(curso), {headers})
     
   }
   getAll(): Observable<Curso[]>{
