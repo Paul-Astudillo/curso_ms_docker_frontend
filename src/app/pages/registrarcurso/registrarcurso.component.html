@@ -23,21 +23,14 @@
         </select>
       </div>
 
-    <div class="form-group">
-      <label for="duracion">Duración (en horas)</label>
-      <input type="number" class="form-control" id="duracion" [(ngModel)]="curso.duracion" name="duracion" required>
-    </div>
+      <div class="form-group">
+        <label for="duracion">Duración (en horas)</label>
+        <input type="text" class="form-control" id="duracion" [(ngModel)]="curso.duracion" name="duracion" required>
+      </div>
 
-    <!-- <div class="form-group">
-      <label for="profesor">Profesor</label>
-      <select class="form-control" id="profesor" [(ngModel)]="profesorSeleccionado" name="profesor" required>
-        <option *ngFor="let profesor of listadoProfesores" [value]="profesor">
-          ({{ profesor.cedula }}) {{ profesor.nombre }} {{ profesor.apellido }}
-        </option>
-      </select>
-    </div> -->
+  
 
-    <button type="button" class="btn btn-primary custom-btn">Registrar Curso</button>
+    <button type="button" class="btn btn-primary custom-btn" (click)="guardar()">Registrar Curso</button>
   </form>
 </div>
 

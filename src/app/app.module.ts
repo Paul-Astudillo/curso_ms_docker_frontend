@@ -11,6 +11,7 @@ import { TituloComponent } from './template/titulo/titulo.component';
 import { MenuComponent } from './template/menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     ListarcursoComponent,
     TituloComponent,
     MenuComponent,
-    InicioComponent
+    InicioComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule , 
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

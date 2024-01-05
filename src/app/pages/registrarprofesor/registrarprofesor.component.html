@@ -1,44 +1,4 @@
-<!-- Agrega las referencias de Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<div class="container mt-4">
-  <form class="profesor-form" #profesorForm="ngForm">
-    <h3 class="text-center mb-4">Registrar Profesor</h3>
-
-    <div class="mb-3">
-      <label for="nombre" class="form-label">Nombre</label>
-      <input id="nombre" class="form-control" [(ngModel)]="profesor.nombre" type="text" name="nombre" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="apellido" class="form-label">Apellido</label>
-      <input id="apellido" class="form-control" [(ngModel)]="profesor.apellido" type="text" name="apellido" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="cedula" class="form-label">Cédula</label>
-      <input id="cedula" class="form-control" [(ngModel)]="profesor.cedula" type="text" name="cedula" required>
-      <div class="invalid-feedback">La cédula debe tener 10 dígitos.</div>
-    </div>
-
-    <div class="mb-3">
-      <label for="especialidad" class="form-label">Especialidad</label>
-      <input id="especialidad" class="form-control" [(ngModel)]="profesor.especialidad" type="text" name="especialidad" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="telefono" class="form-label">Teléfono</label>
-      <input id="telefono" class="form-control" [(ngModel)]="profesor.telefono" type="text" name="telefono" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="correoElectronico" class="form-label">Correo Electrónico</label>
-      <input id="correoElectronico" class="form-control" [(ngModel)]="profesor.correoElectronico" type="email" name="correoElectronico" required>
-    </div>
-
-    <button type="button" class="btn btn-primary">Registrar Profesor</button>
-  </form>
-</div>
 <!-- Agrega las referencias de Bootstrap JavaScript (jQuery y Popper.js) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
