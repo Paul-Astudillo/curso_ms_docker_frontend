@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Curso } from 'src/app/model/curso';
-import { HttpClient } from '@angular/common/http';
 import { CursoService } from 'src/app/services/curso.service';
-
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-registrarcurso',
@@ -37,7 +36,7 @@ constructor(private cursoService: CursoService,
       console.log(this.curso)
       this.cursoService.save(this.curso).subscribe((data)=>{
        console.log("resultado POST: ", data)
-       this.router.navigate(["paginas/listadoCursos"]);
+       this.router.navigate(["paginas/listarcurso"]);
     })
       this.curso= new Curso();
      
